@@ -1,42 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Резюме">
     <title>Резюме</title>
+    <link rel="stylesheet" href="03_anketa.css">
+    <style>
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 15px 20px 30px 40px;
+            margin: 10px 55px 55px 50px;
+        }
+        @media (max-width: 750px) {
+            .qqq {
+                font-size: 1.5rem;
+            padding: 10px;
+            text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Резюме</h1>
-        <img src="https://sun9-75.userapi.com/impg/I-EuWwCz1BXsMRqU8M8k2izOeBhwxATPufy7Og/I9eQEN3S9cw.jpg?size=990x1080&quality=95&sign=2fc28daa69480cd02328539bb8eb7dc7&type=album" width="350">
-    <h2>Основная информация</h2>
-        <form>
-            <div>
-                <label for="name">Имя</label>
-                <input type="name" id="name" placeholder="Введите имя">
+<div class="qqq">    
+    <div class="container">
+        <div class="info">
+                <h1>Резюме</h1>
+                    <img class="foto" src="https://sun9-75.userapi.com/impg/I-EuWwCz1BXsMRqU8M8k2izOeBhwxATPufy7Og/I9eQEN3S9cw.jpg?size=990x1080&quality=95&sign=2fc28daa69480cd02328539bb8eb7dc7&type=album" width="400">
+            
+                    <h2>Основная информация</h2>
+                <p>Меня зовут <strong>Пётр Юркин</strong></p>
+
+                <p>Мне <strong>21 год</strong></p>
+
+                <div class="offtop">
+                    <table border="3" width="500">
+                        <thead>
+                            <tr>
+                                <th>место работы</th>
+                                <th>стаж</th>
+                                <th>оценка</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>ВодоходЪ</th>
+                                <th>2 года</th>
+                                <th>3</th>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th>MC</th>
+                                <th>1 года</th>
+                                <th>4</th>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+
+            <div class="book">
+                <ul>
+                    <li>book</li>
+                    <li>book</li>
+                    <li>book</li>
+                    <li>book</li>
+                    <li>book</li>
+                </ul>
             </div>
 
-            <div>
-                <label for="email">Почта</label>
-                <input type="email" id="email" placeholder="Введите почту">
-            </div>
+                <h2 class="book" class="cs">Мои социальные сети</h2>
+                        <a href="https://vk.com/id147634049" target="_blank" class="links" ><p>VK</p></a>
+                        <a href="https://www.youtube.com/channel/UCIqkvZXJIyMfXJ3a6U3ulZQ" target="_blank" class="links" ><p>Youtube</p></a>
+            </div>    
+        </div>
+    </div> 
+    <hr>
 
-            <div>
-                <label for="number">Возраст</label>
-                <input type="number" id="number" placeholder="Введите возраст" max="99">
-            </div>
+            <form class="you">
+                <h3 >Связаться со мной</h3>
+                <div class="your">
+                    <label for="name">Имя</label>
+                    <input type="name" id="name" placeholder="Введите имя">
+                </div>
 
-            <div>
-                <label for="messange">Место предыдущих работ</label>
-                <br>
-                <textarea id="messange" cols="40" rows="10"></textarea>
-            </div>
-                <input type="submit" value="Обработка данных">
-        </form>
-        <hr>
-        <h2>Мои социальные сети</h2>
-            <a href="https://vk.com/id147634049" target="_blank"><p>VK</p></a>
-            <a href="https://www.youtube.com/channel/UCIqkvZXJIyMfXJ3a6U3ulZQ" target="_blank"><p>Youtube</p></a>
+                <div class="your">
+                    <label for="email">Почта</label>
+                    <input type="email" id="email" placeholder="Введите почту">
+                </div>
+
+                <div class="your">
+                    <label for="number">Возраст</label>
+                    <input type="number" id="number" placeholder="Введите возраст" max="99">
+                </div>
+
+                <div class="your">
+                    <label for="messange">О себе</label>
+                
+                    <textarea id="messange" cols="40" rows="10"></textarea>
+                </div>
+                    <input type="submit" value="Обработка данных" class="btw">
+            </form>
+</div>               
 </body>
 </html>
